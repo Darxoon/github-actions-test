@@ -23,5 +23,5 @@ jobs:
     - name: Yes
       run: pwd
     - name: Yes2
-      run: ll
+      run: ls -la
         
