@@ -21,7 +21,7 @@ jobs:
         repo: Darxoon/OrigamiWand
     
     - name: Yes
-      run: ls
+      run: pwd
     - name: Yes2
-      run: ls .artifacts
+      run: ll
         
