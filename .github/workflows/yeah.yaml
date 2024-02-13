@@ -11,7 +11,10 @@ jobs:
 
     steps:
     - uses: actions/checkout@v4
-      
+    
+    - name: Preparation
+      run: mkdir -p static/OrigamiWand
+    
     - name: Download OrigamiWand artifact
       uses: dawidd6/action-download-artifact@v3
       with:
@@ -19,9 +22,14 @@ jobs:
         workflow: build-on-tag.yaml
         name: OrigamiWand-build
         repo: Darxoon/OrigamiWand
+        path: static/OrigamiWand
     
     - name: Yes
       run: pwd
     - name: Yes2
       run: ls -la
+    - name: Omg
+      run: ls -la static
+    - name: Omg2
+      run: ls -la static/OrigamiWand
         
